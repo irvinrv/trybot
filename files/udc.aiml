@@ -6,14 +6,114 @@
   </category>
   <category>  
     <pattern>HOLA</pattern>
-    <template>Bienvenid@. ¿Quieres saber suáles son las entradas o vamos a la sopa?</template>
+    <template>
+        <random>
+            <li>Bienvenid@. ¿Quieres saber suáles son las entradas o vamos a la sopa?</li>
+            <li>Buen dia ¿toma entrada o empieza con la sopa?</li>
+            <li>Sea bienvenid@. ¿Le digo las entradas o pasamos a la sopa?</li>
+            <li>Muy buen día ¿Quiere saber las entradas o elige la sopa de una vez?</li>
+        </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* ENTRADAS</pattern>
+    <template>
+        <srai>ENTRADAS</srai>
+    </template>
   </category>
   <category>
     <pattern>ENTRADAS</pattern>
     <template>Tenemos palitos de apio, ensalada o fruta picada</template>
   </category>
+ <category>
+    <pattern>* ensalada</pattern>
+    <template>
+        <srai>ensalada</srai>
+    </template>
+  </category>
+ <category>
+    <pattern>* palitos de apio</pattern>
+    <pattern>* palitos</pattern>
+    <template>
+        <srai>palitos</srai>
+    </template>
+  </category>
+ <category>
+    <pattern>* fruta fresca</pattern>
+    <pattern>* fruta</pattern>
+    <template>
+        <srai>fruta</srai>
+    </template>
+  </category>
+ <category>
+  <pattern>palitos</pattern>
+  <template>
+      <random>
+        <li> Excelente elección. Nuestros palitos de apio son frescos y deliciosos. ¿Deseas algo más, te puedo ofrecer fruta fresca, ensalada o te gustaría pasar a la sopa? </li>
+        <li> Claro, los palitos de apio son una opción ligera y deliciosa.¿Hay algo más en lo que pueda ayudarte o te gustaría pasar a la sopa?</li>
+        <li> Perfecto, los palitos de apio son una elección fresca. ¿Hay algo más en lo que pueda ayudarte o te gustaría pasar a la sopa?</li>
+        </random>
+  </template>
+  </category>
+  <category>
+  <pattern>ensalada</pattern>
+  <template>
+    <random>
+        <li> Excelente elección. Nuestra ensalada es fresca y deliciosa. ¿Deseas algo más, te puedo ofrecer palitos de apio, fruta fresca o te gustaría pasar a la sopa? </li>
+        <li> Claro, la ensalada es una gran opción ligera y deliciosa.¿Hay algo más en lo que pueda ayudarte o te gustaría pasar a la sopa?</li>
+        <li> Perfecto, la ensalada es una increíble decisión. ¿Hay algo más en lo que pueda ayudarte o te gustaría pasar a la sopa?</li>
+    </random>
+  </template>
+  </category>
+   <category>
+  <pattern>fruta</pattern>
+  <template>
+   <random>
+        <li> Excelente elección. La fruta picada es fresca y deliciosa. ¿Deseas algo más, te puedo ofrecer palitos de apio, ensalada o te gustaría pasar a la sopa? </li>
+        <li> Claro, la fruta picada es muy deliciosa.¿Hay algo más en lo que pueda ayudarte o te gustaría pasar a la sopa?</li>
+        <li> Perfecto, la fruta picada es una buena elección. ¿Hay algo más en lo que pueda ayudarte o te gustaría pasar a la sopa?</li>
+    </random>
+  </template>
+  </category>
+  
+  
   <category>
     <pattern>SOPA</pattern>
-    <template>¿Quieres sopa del dia o consome?</template>
+    <template>¿Quieres sopa del día o consomé?</template>
+  </category>
+  <category>
+    <pattern>* sopa del dia</pattern>
+    <pattern>* sopa del día</pattern>
+    <pattern>* sopa</pattern>
+    <template>
+        <srai>sopa del dia</srai>
+    </template>
+  </category>
+   <category>
+    <pattern>* consome</pattern>
+    <pattern>* consomé</pattern>
+    <template>
+        <srai>consome</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>sopa del dia</pattern>
+    <template>
+        Perfecto, disfruta de nuestra especialidad. Disfrute y buen provecho, si me necesitas de nuevo no dudes en decir "HOLA"
+    </template>
+    </category>
+  <category>
+    <pattern>consome</pattern>
+    <template>
+        Perfecto, disfruta de nuestro consomé. Disfrute y buen provecho, si me necesitas de nuevo no dudes en decir "HOLA"
+    </template>
+  </category>
+  
+  <category>
+      <pattern>LA * ESTÁ FRÍA</pattern>
+      <pattern>LA * ESTA FRÍA</pattern>
+      <pattern>LA * ESTÁ FRIA</pattern>
+      <pattern>LA * ESTA FRIA</pattern>
+      <template> Una enorme disculpa, llevo su <star/> a calentar</template>
   </category>
 </aiml>

@@ -2,6 +2,18 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>No entiendo bien</template>
+  </category>
+  <category>  
+    <pattern>HOLA</pattern>
+    <template>Bienvenid@. ¿Quieres saber suáles son las entradas o vamos a la sopa?</template>
+  </category>
+  <category>
+    <pattern>ENTRADAS</pattern>
+    <template>Tenemos palitos de apio, ensalada o fruta picada</template>
+  </category>
+  <category>
+    <pattern>SOPA</pattern>
+    <template>¿Quieres sopa del dia o consome?</template>
   </category>
 </aiml>

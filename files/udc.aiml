@@ -75,8 +75,12 @@
     </random>
   </template>
   </category>
-  
-  
+  <category>
+    <pattern>* sopa</pattern>
+    <template>
+        <srai>SOPA</srai>
+    </template>
+  </category>
   <category>
     <pattern>SOPA</pattern>
     <template>¿Quieres sopa del día o consomé?</template>
@@ -84,7 +88,6 @@
   <category>
     <pattern>* sopa del dia</pattern>
     <pattern>* sopa del día</pattern>
-    <pattern>* sopa</pattern>
     <template>
         <srai>sopa del dia</srai>
     </template>
@@ -98,15 +101,87 @@
   </category>
   <category>
     <pattern>sopa del dia</pattern>
-    <template>
-        Perfecto, disfruta de nuestra especialidad. Disfrute y buen provecho, si me necesitas de nuevo no dudes en decir "HOLA"
-    </template>
+    <template>Perfecto disfruta de la sopa del día ¿Va a querer postre?</template>
     </category>
   <category>
     <pattern>consome</pattern>
+    <template>Perfecto disfruta de nuestro consomé ¿Va a querer postre?</template>
+  </category>
+  
+  <category>
+      <pattern>SI</pattern>
+      <that>Perfecto disfruta de la sopa del día ¿Va a querer postres</that>
+      <that>Perfecto disfruta de nuestro consomé ¿Va a querer postre</that>
+      <template>De postre tenemos crepas de cajeta o nutella y también ofrecemos helado de chocolate</template>
+  </category>
+  <category>
+      <pattern>NO</pattern>
+      <that>Perfecto disfruta de la sopa del día ¿Va a querer postres</that>
+      <that>Perfecto disfruta de nuestro consomé ¿Va a querer postre</that>
+      <template>De acuerdo, si me necesita no dude en volver a escribir "HOLA"</template>
+  </category>
+   <category>
+    <pattern>* POSTRE</pattern>
+    <pattern>* POSTRES</pattern>
     <template>
-        Perfecto, disfruta de nuestro consomé. Disfrute y buen provecho, si me necesitas de nuevo no dudes en decir "HOLA"
+        <srai>postre</srai>
     </template>
+  </category>
+  <category>
+    <pattern>* CREPA</pattern>
+    <pattern>* CREPAS</pattern>
+    <template>
+        <srai>crepa</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* Helado</pattern>
+    <pattern>* HELADOS</pattern>
+    <template>
+        <srai>helado</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>postre</pattern>
+    <template>De postre tenemos crepas de cajeta o nutella y también ofrecemos helado de chocolate</template>
+  </category>
+  
+  <category>
+  <pattern>crepa</pattern>
+  <template>
+    <random>
+        <li>Excelente elección nuestra crepa es de muy buena calidad ¿Deseas algo mas?</li>
+        <li>Le aseguro que le encantara ¿Hay algo mas en lo que pueda ayudarte?</li>
+        <li>Es una increíble decisión ¿Hay algo mas en lo que pueda ayudarte?</li>
+    </random>
+  </template>
+  </category>
+  <category>
+  <pattern>helado</pattern>
+  <template>
+    <random>
+        <li>Excelente elección nuestro helado es de muy buena calidad ¿Deseas algo mas?</li>
+        <li>Le aseguro que le encantara ¿Hay algo mas en lo que pueda ayudarte?</li>
+        <li>Es una increíble decisión ¿Hay algo mas en lo que pueda ayudarte?</li>
+    </random>
+  </template>
+  </category>
+  
+  <category>
+      <pattern>SI</pattern>
+      <that>Excelente elección nuestro helado es de muy buena calidad ¿Deseas algo mas</that>
+      <that>Le aseguro que le encantara ¿Hay algo mas en lo que pueda ayudarte</that>
+      <that>Excelente elección nuestra crepa es de muy buena calidad ¿Deseas algo mas</that>
+      <that>Es una increíble decisión ¿Hay algo mas en lo que pueda ayudarte</that>
+      <template>Dime, ¿Que necesitas?, Recuerda que puedes decir "HOLA" para reiniciar el menú</template>
+  </category>
+  <category>
+      <pattern>NO</pattern>
+      <that>Excelente elección nuestro helado es de muy buena calidad ¿Deseas algo mas</that>
+      <that>Le aseguro que le encantara ¿Hay algo mas en lo que pueda ayudarte</that>
+      <that>Excelente elección nuestra crepa es de muy buena calidad ¿Deseas algo mas?</that>
+      <that>Es una increíble decisión ¿Hay algo mas en lo que pueda ayudarte</that>
+      <template>De acuerdo, si me necesita no dude en volver a escribir "HOLA"</template>
   </category>
   
   <category>
